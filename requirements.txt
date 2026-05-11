@@ -1,0 +1,21 @@
+# PyTorch wheels are CUDA-specific. Pick the index URL that matches your
+# CUDA toolkit / driver, then run:
+#
+#   pip install -r requirements.txt --index-url <url> --extra-index-url https://pypi.org/simple
+#
+# Common choices:
+#   CPU only       https://download.pytorch.org/whl/cpu
+#   CUDA 11.8      https://download.pytorch.org/whl/cu118
+#   CUDA 12.1      https://download.pytorch.org/whl/cu121
+#   CUDA 12.4      https://download.pytorch.org/whl/cu124   (used on this dev box, Tesla T4)
+#
+# Or use the official selector: https://pytorch.org/get-started/locally/
+#
+# If you omit --index-url, pip pulls the default wheel from PyPI, which may
+# not match your local CUDA driver.
+
+torch==2.6.0
+torchvision==0.21.0
+numpy==2.2.6
+matplotlib==3.10.9
+Pillow==12.1.1
